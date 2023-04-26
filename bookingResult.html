@@ -520,7 +520,7 @@
 		<div class="header-top">
 			<div class="row">
 			<span class="col"></span>
-			<span class="col" style="font-size:14px; margin-left: -300px;">기능과 디자인이 완벽하게 구현되어 있지 않은 테스트 페이지 입니다. 자세한 기능과 설명은 피피티를 확인해주세요!</span>
+			<span class="col" style="font-size:14px; margin-left: -300px;">기능과 디자인이 완벽하게 구현되어 있지 않은 <span style="color: red;">테스트 페이지</span> 입니다. 자세한 기능과 설명은 pdf를 확인해주세요!</span>
 			<c:if test="${!empty sLevel}">
 				<span class="col text-right"><font color="#c27aa9"><i class="fi fi-rr-smile-wink"></i> 윤정문</font>님 환영합니다! &nbsp;&nbsp;</span>
 			</c:if>
@@ -542,25 +542,25 @@
 			  <div><a href="index.html"><img src="images/logo9.png" style="width:200px;"/></a></div>
 			</div>
 			<div class="ml-auto" style="margin-right: 20px">
-					<c:if test="${sLevel == 1 || sLevel == 2 || sLevel == 3}">
-						<a href="membeerMain.html">My Account</a>	
-					</c:if>
-					<c:if test="${sLevel == 4}">
-						<a href="adminMain.html" >관리자페이지</a>
-					</c:if>
-					<c:if test="${!empty sLevel}">
-						<a href="bookingMenu.html">BOOK NOW</a>
-					</c:if>
-					<!-- <c:if test="${empty sLevel}">
-						<a href="${ctp}/member/memberLogin">BOOK NOW</a>
-					</c:if>
-					<c:if test="${empty sLevel}">
-						<a href="${ctp}/member/memberLogin">로그인</a>
-  						<a href="${ctp}/member/memberJoin">회원가입</a>
-						</c:if> 
-					<c:if test="${!empty sLevel}">						
-					  <a href="${ctp}/member/memberLogout">로그아웃</a>
-					</c:if>-->
+				<c:if test="${!empty sLevel}">
+					<a href="bookingMenu.html">예약하기</a>
+				</c:if>
+				<c:if test="${sLevel == 1 || sLevel == 2 || sLevel == 3}">
+					<a href="membeerMain.html">My Account</a>	
+				</c:if>
+				<c:if test="${sLevel == 4}">
+					<a href="adminMain.html" >관리자페이지</a>
+				</c:if>
+				<!-- <c:if test="${empty sLevel}">
+					<a href="${ctp}/member/memberLogin">BOOK NOW</a>
+				</c:if>
+				<c:if test="${empty sLevel}">
+					<a href="${ctp}/member/memberLogin">로그인</a>
+					<a href="${ctp}/member/memberJoin">회원가입</a>
+					</c:if> 
+				<c:if test="${!empty sLevel}">						
+					<a href="${ctp}/member/memberLogout">로그아웃</a>
+				</c:if>-->
 			</div>
 		</div><!-- navbar -->
 	</div><!-- headerWrap -->
